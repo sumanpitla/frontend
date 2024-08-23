@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Heading, VStack ,Grid} from '@chakra-ui/react';
+import { Box, Button, Heading,Grid} from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 function HomePage() {

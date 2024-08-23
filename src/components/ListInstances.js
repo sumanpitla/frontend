@@ -147,7 +147,7 @@ import {
   VStack,
   HStack,
 } from "@chakra-ui/react";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import axios from "axios";
 
 function App() {
