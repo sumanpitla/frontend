@@ -13,11 +13,14 @@ To run the frontend application independently, follow these steps:
    cd frontend
    ```
 
-2. **Run the container:**
+2. **Install dependencies:**
    ```bash
-   docker run -p 3000:3000 suman51/frontend-assignment
+   npm install
    ```
-
+2. **Run the project:**
+   ```bash
+   npm start
+    ```
 3. The application should now be accessible at `http://localhost:3000`.
 
 ## Running as Part of the Full Application Stack
