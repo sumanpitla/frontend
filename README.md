@@ -1,70 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Frontend Project
 
-## Available Scripts
+This is the frontend application developed using React.js. The project is containerized using Docker and can be run independently or as part of the full application stack with the backend.
 
-In the project directory, you can run:
+## Running the Frontend Only
 
-### `npm start`
+To run the frontend application independently, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/sumanpitla/frontend.git
+   cd frontend
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Run the container:**
+   ```bash
+   docker run -p 3000:3000 suman51/frontend-assignment
+   ```
 
-### `npm test`
+3. The application should now be accessible at `http://localhost:3000`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running as Part of the Full Application Stack
 
-### `npm run build`
+If you want to run the full application including both the frontend and backend, please visit the [backend repository](https://github.com/sumanpitla/backend).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The backend repository contains the necessary Docker Compose setup to run both the frontend and backend together. The frontend Docker image is already integrated into the backend's Docker Compose file, so you only need to run the following command from the backend project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+docker-compose up
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This will pull the frontend and backend images from Docker Hub, set up the containers, and run the entire application stack.
 
-### `npm run eject`
+## Suggestions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Visit the Backend Repo:** For a complete experience with the frontend and backend, it's recommended to visit the [backend repository](https://github.com/sumanpitla/backend). The backend repo includes instructions on running the entire application stack with Docker Compose.
+- **Environment Variables:** If your frontend relies on specific environment variables, ensure they are set correctly when running the Docker container.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any issues or questions, feel free to open an issue in the repository.
