@@ -1,7 +1,7 @@
 
 # Frontend Project
 
-This is the frontend application developed using React.js. The project is containerized using Docker and can be run independently or as part of the full application stack with the backend.
+This is the frontend application developed using React.js. The project is containerized using Docker as part of the full application stack with the backend.
 
 ## Running the Frontend Only
 
